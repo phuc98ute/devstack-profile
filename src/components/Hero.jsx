@@ -22,7 +22,7 @@ const Hero = () => {
             a fullstack developers, <br className="sm:block hidden" />
             experience with web development & e-commerce platfrom, <br className="sm:block hidden" />
             experience with Java application, Spring framework, ReactJS <br className="sm:block hidden" /> 
-            & microservice.
+            experience with Cloude Services (AWS & Azure), Docker & HCL
           </p>
         </div>
       </div>
