@@ -23,20 +23,25 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill enough fields to sent email.");
+      return;
+    }
+
     setLoading(true);
 
     emailjs
       .send(
-        "service_mgqs8ud",
-        "template_h4ltobi",
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
         {
           form_name: form.name,
-          to_name: "Phuc Vo",
+          to_name: process.env.NAME,
           from_email: form.email,
-          to_email: "phuvoitspkt@gmail.com",
+          to_email: process.env.EMAIL,
           message: form.message,
         },
-        "fTAr50xKE1Owqlu8M"
+        process.env.EMAILJS_API_KEY
       )
       .then(
         () => {
