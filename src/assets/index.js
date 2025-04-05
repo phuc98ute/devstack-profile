@@ -33,6 +33,16 @@ import kms from "./company/kms.png";
 import kibo from "./company/kibo.jpeg";
 import lni from "./company/lni.jpeg";
 
+import java from "./tech/java.png";
+import postgresql from "./tech/postgresql.png";
+import terraform from "./tech/terraform.png";
+import aws from "./tech/aws.png";
+import azure from "./tech/azure.png";
+import ghbass from "./ghbass.png";
+import lnirooftop from "./lni-rooftop.png";
+import hos from "./hos.png";
+import uc from "./uc.jpg";
+
 export {
   logo,
   backend,
@@ -65,4 +75,13 @@ export {
   kms,
   kibo,
   lni,
+  java,
+  postgresql,
+  terraform,
+  aws,
+  azure,
+  ghbass,
+  lnirooftop,
+  hos,
+  uc
 };
