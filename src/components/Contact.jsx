@@ -37,7 +37,7 @@ const Contact = () => {
         {
           form_name: form.name,
           to_name: process.env.NAME,
-          from_email: form.email,
+          form_email: form.email,
           to_email: process.env.EMAIL,
           message: form.message,
         },
