@@ -1,9 +1,9 @@
-FROM node:18-alpine3.17 as build
+FROM node:20-alpine3.19 as build
 
 WORKDIR /app
 COPY . /app
 
-RUN npm install --legacy-peer-deps
+RUN npm install
 RUN npm run build
 
 FROM ubuntu
